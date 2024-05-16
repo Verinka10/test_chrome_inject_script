@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+
+  "name": "DragonFly JS",
+  "version": "1.0",
+  "default_locale":"ru",
+  "background": {
+     "scripts": ["js/lib/ModelStore/Model.js", "js/lib/vendors/sjcl.js", "js/lib/dom/nik.js", "js/lib/Test/Test.js",
+                 "config.js",  "js/common.js", "background.js", "test.js"]
+   },
+  	 "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  	 
+   "browser_action": {
+    "default_title": "Injected scripts",
+    "default_icon": "css/images/icon.png",
+    "default_popup": "popup.html",
+    "default_script": "popup.js"
+  },
+  
+    "content_scripts": [
+      {
+        "js": ["js/common.js", "js/lib/dom/nik.js", "js/lib/ModelStore/Model.js", "content_start.js"],
+        "matches": [ "http://*/*", "https://*/*", "ftp://*/*", "file://*/*"],
+        "run_at": "document_start",
+        "all_frames": true
+      },
+      {
+        "js": ["content_idle.js" ],
+        "matches": [ "http://*/*", "https://*/*", "ftp://*/*", "file://*/*"],
+        "run_at": "document_idle",
+        "all_frames": true
+      }     
+   ],
+   
+  "icons": {
+    "16": "css/images/icon.png",
+    "48": "css/images/icon-48.png",
+    "128": "css/images/icon-128.png",
+    "256": "css/images/icon-256.png"
+  },
+  
+  
+   "permissions": [
+    "tabs", "*://*/*", "activeTab", "unlimitedStorage", "webRequest", "webRequestBlocking", "webNavigation"
+    ]
+}

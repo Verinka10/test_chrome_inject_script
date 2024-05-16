@@ -1,0 +1,5 @@
+{
+	"forDeleteByAttr": [{"id": 4}, {"id": 7, "name": "ah-XXX"}],
+	"forDisableByAttr": [],
+	"rules": [{"is_active":true,"name":"mh-from-f-http://localhost","type":"main-js","priority":1000,"condition":{"url":{},"initiator":{"urlFirst":"http://localhost"}},"hit":1,"urlReason":"http://localhost/chrome_repl_cont_no_declarative/test/"}]
+}

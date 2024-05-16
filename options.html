@@ -1,0 +1,127 @@
+<html>
+   <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	  <link href="js/lib/faces/face.css" rel="stylesheet" type="text/css" />
+	  <link href="js/lib/faces/sea/style.css" rel="stylesheet" type="text/css" />
+	  <link href="css/style.css" rel="stylesheet" type="text/css" />
+	  <script src="js/lib/dom/nik.js"></script>
+	  <script src="js/lib/faces/face.js"></script>
+	 <!-- <script src="config.js"></script>  --> 
+	  <script type="text/javascript" src="js/lib/ModelStore/Model.js"></script>
+	  <!-- <script type="text/javascript" src="js/models/DeclarativeRuleModel.js"></script> -->
+	  <script type="text/javascript" src="js/common.js"></script>
+	  <script src="options.js"></script>
+	  <script type="text/javascript" src="common_ui.js"></script>
+	  
+	  <style type="text/css">
+	  
+	  body {
+	     min-width: 800px;
+	  }
+	  
+	  #tab1 {
+	     padding-top: 0.5em;
+	  }
+	  
+	  	table, textarea, input {  
+	  		font-size: 12px; 
+	  	}
+	  	
+	  	#cont-table {
+	  		display: inline-block;
+	  	}
+	  	
+   
+      </style>
+</head>
+<body>
+  
+  <div class="line-head"></div>
+   <div class="about-div-2">
+      <img style="float: left;" src="css/images/icon.png">
+      <a id="app-name">Inject JS</a>
+      <a href="mailto:m73010@yandex.ru">m73010@yandex.ru</a> | <a href="https://chrome.google.com/webstore/support/">__MSG_option_support_page__</a> | <a href="https://github.com/Verinka10/chrome_repl_cont_no_declarative">github.com</a> | <code>&copy; NikR</code>
+   </div>
+   
+   
+   <div id="tab1" class="nik-tab tab-config">
+   <div class="tab-head">
+         <label class="active">__MSG_Common__</label>
+         <label>__MSG_Export__</label>
+   </div>
+   
+   <div>
+   <div class="tab-cont active">
+      <br>
+      <div>
+         <label>Start load, start document</label>
+         <br>
+	     <textarea id="cont-data-start-start" rows="20" cols="150"></textarea>
+	     <br>
+	     <button id="button-save-start-start">save</button>
+	   </div>
+	   
+	   <!-- 
+	   <br>
+	     <div>
+         <label>Start load, end document</label>
+         <br>
+        <textarea id="cont-data-start-start" rows="20" cols="150"></textarea>
+        <br>
+        <button id="button-save-start-start">save</button>
+      </div>
+	    -->
+	    
+	    <br>
+	    <div>
+         <label>Idle load, start document</label>
+         <br>
+        <textarea id="cont-data-idle-start" rows="20" cols="150"></textarea>
+        <br>
+        <button id="button-save-idle-start">save</button>
+      </div>
+	    
+       <br>
+      <div>
+      <label>script_onUpdated_complete_end, end document</label>
+      <br>
+      <textarea id="cont-data-script_onUpdated_complete_end" rows="20" cols="150"></textarea>
+      <br>
+      <button id="button-save-script_onUpdated_complete_end">save</button>
+      </div>
+	    
+	    <br>
+	    <br>
+	   <div>
+      <label>config all</label>
+      <br>
+	   <textarea id="json-raw-config" rows="20" cols="150"></textarea>
+	   <br>
+      <button id="button-raw-config-save">save</button>
+	   </div>
+	   
+   </div> <!-- tab-cont -->
+   
+   <div class="tab-cont">
+      <h3>__MSG_option_Export_Import__</h3>
+      <div class="row"><label for="dr-dump"></label><textarea rows="20" cols="100" id="dr-dump"></textarea></div>
+      <div class="row">
+        <a id="dr-button-export" href="#" class="link-button">__MSG_Export__</a>
+        <a id="dr-button-import" href="#" class="link-button disable">__MSG_Import__</a>
+           <a id="dr-button-encrypt" href="#" class="link-button disable">__MSG_option_Encrypt__</a>
+           <a id="dr-button-decrypt" href="#" class="link-button disable">__MSG_option_Decrypt__</a>
+            <input type="password" title="password"  id="dr-enc-pass" class="disable-"> <label for="dr-enc-pass">__MSG_option_Pass__</label>
+      </div>
+      <div>
+         <div class="row"></div>
+         <div class="row"></div>
+      </div>
+   </div> <!-- tab-cont export -->
+   </div> <!-- tab-cont all -->
+</div> <!-- tab -->
+
+<div class="foot">
+</div>
+  
+</body>
+</html>

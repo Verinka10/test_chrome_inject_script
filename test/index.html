@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--  <meta http-equiv="refresh"  content="0; url=http://localhost/mlibjs/tests/faces/table.html">-->
+<title>Test</title>
+<script type="text/javascript" src="assets/a20tt.js" ></script>
+<script type="text/javascript" src="assets/a20tt.js?gg=10" ></script>
+<script type="text/javascript" src="assets/nikola.js?gg=10" ></script>
+<script type="text/javascript" src="new/nikola.js" ></script>
+<script type="text/javascript" src="new/gg/nikola.js" ></script>
+<script type="text/javascript" src="http://nn.oo.ru/ppp/nikola.js?gg=10" ></script>
+<script type="text/javascript" src="assets/nikola.xxx" ></script>
+<script type="text/javascript" src="https://ff.gg.ru/nik" ></script>
+<script type="text/javascript" src="http://localhost/mlibjs/dom/nik.js" ></script>
+
+<script type="text/javascript">
+ console.log('main script1');
+</script>
+
+<script type="text/javascript">
+ window.onload = function(){
+	  document.getElementsByTagName("div")[0].innerHTML = "----------------script------------";
+ }
+ setTimeout(function(){ document.getElementsByTagName("div")[0].innerHTML += "----------------script------------"; }, 2000);
+ 
+ function getAjax (){
+	   return window.ActiveXObject ? new ActiveXObject("Microsoft.XMLHTTP") : new XMLHttpRequest();
+	}
+
+	 var s = "nik=pisda&fffff=10";
+	 var g = getAjax();
+
+	 g.open("get", "/aa.js");
+	 g.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	 g.send(s);
+	  /*g.onreadystatechange = function(){
+	      if (g.readyState == 4) {
+	         if ( g.status == 200 ) {
+	             alert(g.responseText);
+	         }
+	      }
+	  };*/
+	 
+ 
+</script>
+
+
+</head>
+<body>
+<a href="">1111</a>
+<a href="http://localhost/mlibjs/tests/faces/table.html" target="_blank">http://localhost/mlibjs/tests/faces/table.html</a>
+<a href="#" onclick="location.replace('http://localhost/mlibjs/tests/faces/table.html'); return false;">replace</a>
+<div id="d1">1 div</div>
+<div>2 div</div>
+<div>
+   3 div
+   <div>3.1 div</div>
+   <div>3.2 div</div>
+</div>
+<hr>
+
+<img src="assets/image1.png">
+
+</body>
+</html>

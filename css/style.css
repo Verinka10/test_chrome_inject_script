@@ -1,0 +1,100 @@
+.text-overflow {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.inline {
+   display: inline-block;
+}
+
+.wmax400 {
+	max-width: 400px;
+}
+
+.nik-switcher {
+	display: inline-block;
+	-line-height: 2em;
+	-margin-bottom: 4px;
+}
+
+.row {
+	margin-bottom: .3em;
+	-line-height: inherit !important;
+}
+
+.nik-table .trow-current input {
+	background-color: rgb(255, 255, 131);
+}
+
+
+.nik-table {
+	-height: 550px;	
+	-display: table-caption;
+}
+
+.nik-table td {
+      white-space: nowrap;
+      border-left: 1px solid #ddd;
+      padding: 0 2px 0 3px;
+   }
+
+.nik-table tr {
+	height: 2em;
+}
+
+.nik-table td {
+	min-width: 55px;
+}
+
+.row-line > * {
+	display: inline-flex;
+}
+
+.user-level-- {
+	display: none !important;
+}
+
+.user-level-dev- {
+	display: initial  !important;
+}
+
+.link-button:hover {
+	-background-color: #c7c3ff;
+	-transition: background-color 0.5s ease;
+}
+
+
+.s-r {
+	display: block;
+   line-height: 0.5em;
+	font-size: smaller;
+}
+
+.s-r-s {
+	background-color: #D2CFFF;
+	-font-weight: bold;
+}
+
+.info-row {
+   display: block;
+   line-height: 0.5em;
+   font-size: smaller;
+}
+
+.info-cell {
+   line-height: 0.5em;
+   font-size: smaller;
+}
+
+.row-slim {
+	line-height: 2em;
+}
+
+.row-slim-x {
+   line-height: 1.5em;
+}
+
+.gap-row-slim {
+   margin-top: .5em;
+}

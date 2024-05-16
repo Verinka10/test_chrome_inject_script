@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+	color: #1D1679;
+}
+
+body {
+   font-family: sans-serif, Tahoma, Arial;
+   font-size: 12px;
+}
+
+/* a */
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+a:visited {
+}
+
+/* end a */
+
+/* input */
+
+input {
+	-border-radius: 2px;
+	-border: 1px solid #A8A5C9;
+	-box-shadow: 0 0 10px red;
+}
+
+input[type="text"], input[type="number"], select, input[type="password"]{
+	padding: 3px;
+}
+
+input[type="checkbox"] {
+	zoom: 1.3;
+}
+
+input[type="checkbox"] + label {
+	vertical-align: 2px;
+}
+
+button, input[type="button"], input[type="submit"] {
+	padding: 3px 6px;
+}
+
+
+/* end input*/
+
+
+/* fieldset legend */
+fieldset, hr {
+   border: 1px solid #BABFF5;	
+}
+
+hr {
+}
+
+legend {
+}
+
+/**/
+
+form .row {
+	-margin-bottom: 0.3em;
+	line-height: 2.4em;
+}
+
+
+/* link button*/
+
+.link-button {
+	padding: 0 2px 0 2px;
+	border: 1px solid #6f68d6;
+	text-decoration: none;
+	background-color: white;
+}
+
+.link-button:hover {
+	text-decoration: none;
+	-background-color: #c7c4f1;
+}
+
+.link-button:active, .link-button.toggle-down, .nik-tab .tab-head > label.active {
+	color: white;
+	background-color: #6f68d6;
+	border-color: #6f68d6;
+}
+
+
+/*.link-button.disable:hover {
+	background-color: inherit !important;
+}*/
+/**/
+
+/*tab*/
+.nik-tab .tab {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.nik-tab .tab-head > label {
+	display: inline-block;
+	-cursor: pointer;
+	height: 2em;
+	padding: .1em 1em;
+	border: 1px solid;
+	line-height: 2em;
+	border-bottom: none;
+	border-radius: 3px 3px 0 0;
+	border-color: #6f68d6;
+}
+
+.nik-tab .tab-head > label.active {
+}
+
+.nik-tab .tab-head > label.disable, .link-button.disable {
+	color: #B7B1CE;
+	pointer-events: none;
+}
+
+input.disable {
+	background-color: #ddd;
+}
+
+.nik-tab .tab-cont {
+   display: none;
+	padding: 0 1em;
+	border: 1px solid;
+	border-color: #6f68d6;
+	-margin-top: 2px;
+}
+
+.nik-tab .tab-cont.active {
+   display: block;
+}
+
+/**/
+
+/* message lines */
+.message-line.message-line-info {
+   background-color: #A8A2FD;
+}
+
+.message-line.message-line-success {
+   background-color: #79A5F5;
+}
+
+.message-line.message-line-warning {
+   background-color: #FDFDCA;
+}
+
+.message-line.message-line-error {
+   background-color: #DDACFD;
+}
+/**/
+
+/* table */
+
+ul.t-pager > li {
+	padding: 3px 8px 3px 8px;
+}
+
+ul.t-pager .t-pager-curr {
+	color: white;
+    background-color: #6f67d6;
+    border-radius: 4px;
+}
+
+/**/

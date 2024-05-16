@@ -1,0 +1,30 @@
+   function eventClick(e) {
+      var el = e.target;
+      //console.log(333, e, el);
+      
+      // find link
+      var url;
+      do {
+         //console.log(111, el);
+         if (el.src) url = el.src;  
+         if (el.href) url = el.href;
+      } while(el = el && el.parentNode)
+      
+      if (!url) return;
+      url = url.replace(/\?.*/, '');
+      
+      // save
+      var m = ModelData().model.findByAttributes({url: url});
+      if (!m) { 
+         m = new ModelData;
+         m.setAttr({created: (new Date).getTime()}).save()
+      }
+       
+       m.setAttr({
+         url: url.substr(0, 100),
+         hit:  m.attr.hit + 1,
+         updated: (new Date).getTime(),
+       }).save();
+         
+       console.log('set model->', m.attr);
+   }
